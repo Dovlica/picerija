@@ -1,0 +1,610 @@
+/*  reset styles */
+html, body{ width:100%; height:100%; margin:0; padding:0; scroll-behavior: smooth; }
+body *{ margin:0; padding:0; box-sizing:border-box; }
+a{ text-decoration:none; }
+ol, ul{ list-style-type:none; }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');  
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+body{
+    height: auto;
+    background:rgb(252, 234, 205);
+}
+#wrapper{
+    /* max-width: 1200px; */
+    max-width: 100%;
+    margin: 0 auto;
+    /* box-shadow: 30px 0px 40px rgba(0,0,0,0.1),-30px 0px 40px rgba(0,0,0,0.1); */
+}
+#pocetna{
+    background-image: url("../slike/LJM03074-01.jpeg");
+    background-position: center 80%;
+    /* background-position:center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;    
+}
+.logo1 a img{
+    width: 500px;
+    height: 370px;
+    /* width: 25vw;
+    height: 15vw; */
+    opacity: 0.9;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top:4%;
+}
+#opis2{
+    float:right;
+    width:50%;
+    margin-right: 25%; 
+    margin-left: 25%; 
+    text-align: center;
+    margin-top:450px; 
+}
+#opis2 h1{
+    color:rgba(226, 201, 142, 0.849);
+    font-family: 'Livvic', sans-serif;
+    font-size: 3rem;
+}
+#jezici{
+    color:rgba(226, 201, 142, 0.815);
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    top:4%;
+    left:2%;
+}
+#jezici a{
+    color:rgba(226, 201, 142, 0.815);
+}
+#jezici a:hover{
+    color:rgba(226, 201, 142);
+}
+#meni1{
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    top:4%;
+    right:2%;
+}
+#meni1 a{
+    color:rgba(226, 201, 142, 0.815);
+    margin-right: 30px;
+}
+#meni1 a:hover{
+    color:rgba(226, 201, 142);
+}
+#footer2{
+    color:rgba(226, 201, 142, 0.815);
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom:4%;
+    left:2%;
+}
+#footer2 :first-child{
+    font-size: 1.4rem;
+}
+#footer3{
+    color:rgba(226, 201, 142, 0.815);
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 4%;
+    right:2%;
+    text-align: right;
+}
+#f{
+    font-size: 1.4rem;
+}
+#footer3 a{
+    color:rgba(226, 201, 142, 0.815);
+}
+#footer3 a:hover{
+    color:rgba(226, 201, 142);
+}
+
+#meni{
+    height:100vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623),inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623);
+}
+#meni h3{
+    font-size: 7vw;
+    font-family: 'Tangerine', serif;
+    font-weight: bold;
+    margin-left: 16vw;
+    padding-top:5vw;
+    padding-bottom:3vw;
+    width: 37vw;
+    /* color:rgba(88, 52, 40, 0.795); */
+    color:rgb(133, 39, 42);
+    /* color:rgb(88, 52, 40); */
+    opacity: 0.9;
+}
+.logo img{
+    position: absolute;
+    width: 10vw;
+    height: 7vw;
+    /* opacity: 0.9; */
+}
+#meni .logo a img{
+    top: 4.5vw;
+    left: 7vw;
+    /* opacity: 0.9; */
+}
+#pizza-menu{
+    width:100%;  
+    /* height:60vh; */
+    height:60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#pizza-menu a{
+    color:rgb(133, 39, 42);
+}
+#pizza-menu .kategorije{  
+    width: 350px;
+    height:450px;
+    margin:1.8vw;
+    text-align: center;
+    border-radius:3%;
+    transition: box-shadow 0.3s ease-in-out;
+    /*probaj i bez ovog dole*/
+    background: linear-gradient(to bottom,  rgba(129, 68, 32, 0.37) 0%, rgba(245, 227, 213, 0.589) 50%);
+    box-shadow:0 0 20px rgb(185, 155, 141);
+}
+#pizza-menu .kategorije:hover {
+    box-shadow:0 0 20px rgb(102, 61, 43);
+    border-radius: 0;
+    cursor:pointer;
+}
+#pizza-menu .kategorije h1{
+    margin:1vw;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold; 
+    padding-top: 2vw;
+}
+#pizza-menu .kategorije img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 3%;
+}
+
+.footer{
+    height:15vh;
+    width:100%;;
+    background-image: url("../slike/drvena_pozadina2.jpg") ;
+    /* background-image: url("../slike/lajsna1 - Copy.jpeg") ; */
+    background-repeat: repeat;
+    background-position:center;
+    color:rgb(206, 163, 130);
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.1rem;
+    /* box-shadow: 5px 5px 10px rgb(136, 104, 104); */
+    display:flex;
+    /* flex-wrap: wrap;
+    position: sticky;
+    left:0;
+    bottom: 0; */
+}
+
+.footer-cell{
+    /* flex-grow: 1; */
+    flex-basis: 20%;
+    align-self: center;
+    text-align: center;
+}
+.footer-cell i{
+    font-size: 1.7rem;
+}
+.footer-cell a i:hover{
+    /* opacity: 0.5; */
+    font-weight: bold;
+    /* font-size: 2rem; */
+    /* line-height: 2rem; */
+}
+.footer-cell a{
+    color:rgb(206, 163, 130);
+}
+
+#o_nama{
+    height: 85vh;
+}
+#o_nama .logo a img{
+    opacity: 0.9;
+    top:4.5vw;
+}
+#about{
+    background-image: url("../slike/pec_na_drva.jpg");
+    background-position:-500px 100px;
+    opacity: 0.4;
+    height: 85vh;
+}
+#text-about{
+    /* flex: 0 1 40%; */
+    position: absolute;
+    margin-left: 6vw;
+    margin-top:-45vw;
+    width: 35vw;
+    color:rgb(88, 52, 40);
+    /* color:rgb(133, 39, 42); */
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #aaa;
+    /* text-shadow: #f1e8e1cb 1px 1px 0; */
+}
+#text-about h3{
+    font-size: 7vw;
+    font-family: 'Tangerine', serif;
+    text-shadow: none;
+    margin-left:10vw;
+    margin-top:5vw;
+    /* color:rgb(133, 39, 42); */
+    /* opacity: 0.9; */
+    color:rgb(88, 52, 40);
+}
+#text-about p{
+    opacity: 1;
+    display: flex;
+    font-size: 1.7vw;
+    /* font-size: 3vw; */
+    line-height: 2.4vw;
+    font-family: 'Livvic', sans-serif;
+}
+#images-about{
+    /* flex: 0 1 60%; */
+    position: relative;
+    width: 40vw;
+    height: 30vw;
+    margin-top:-38vw;
+    margin-left: 50vw;
+}
+#images-about div{
+    position: absolute;
+    width: 40vw;
+    height: 30vw;
+    /* border-radius: 2%; */
+    /* border: 10px outset rgb(239, 174, 137); */
+    box-shadow: 10px 0px 18px 5px rgb(88, 52, 40);
+    /* box-shadow: inset 6px 10px 15px rgb(194, 181, 164),  inset -6px -10px 15px rgb(194, 181, 164) ; */
+    /* box-shadow:  6px 6px 15px rgb(202, 198, 198),   -6px -6px 15px rgb(194, 188, 188) ; */
+}
+#images-about div:nth-child(1){
+        background: url('../slike/picerija_enterijer1.jpg') no-repeat ;
+        background-position: 0 0;
+        background-size: cover;
+    }
+#images-about div:nth-child(2){
+    background: url('../slike/picerija_enterijer2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#images-about div:nth-child(3){
+    background: url('../slike/picerija_enterijer3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#images-about div:nth-child(4){
+    background: url('../slike/picerija_enterijer4.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@keyframes promenaPozadine1 {
+    0% { opacity: 1;}
+    25% { opacity: 1;}
+    50% { opacity: 0;}
+    75% { opacity: 0;}
+    95% { opacity: 0;}
+    100% { opacity: 1;}
+}
+#images-about div:nth-child(1) {
+    animation: promenaPozadine1 20s ease 5s infinite normal both;
+}
+@keyframes promenaPozadine2 {
+    0% { opacity: 0;}
+    20% { opacity: 0;}
+    25% { opacity: 1;}
+    50% { opacity: 1;}
+    75% { opacity: 0;}
+    100% { opacity: 0;}
+}
+#images-about div:nth-child(2) {
+    animation: promenaPozadine2 20s ease 5s infinite normal both;
+}
+@keyframes promenaPozadine3 {
+    0% { opacity: 0;}
+    25% { opacity: 0;}
+    45% { opacity: 0;}
+    50% { opacity: 1;}
+    75% { opacity: 1;}
+    100% { opacity: 0;}
+}
+#images-about div:nth-child(3) {
+    animation: promenaPozadine3 20s ease 5s infinite normal both;
+}
+@keyframes promenaPozadine4 {
+    0% { opacity: 1;}
+    5% { opacity: 0;}
+    25% { opacity: 0;}
+    50% { opacity: 0;}
+    70% { opacity: 0;}
+    75% { opacity: 1;}
+    100% { opacity: 1;}
+}
+#images-about div:nth-child(4) {
+    animation: promenaPozadine4 20s ease 5s infinite normal both;
+}
+
+/* screen sizes 1660px and down */
+@media(max-width: 1660px){
+    #pizza-menu .kategorije{  
+        width: 300px;
+    height: 25vw;
+
+        /* margin-top:150px; */
+        margin-top:5vh;
+    }
+    /* #o_nama .logo a img{
+        top:-100px;
+    }
+    #text-about{
+        width: 37vw;
+        margin-top:-38vw;
+
+    }
+    #text-about h3{
+        margin-top:-100px;
+        
+    } */
+    #text-about p{
+        /* font-size: 2rem; */
+        /* line-height: 3vw; */
+    }
+    /* #images-about{ */
+        /* flex: 0 1 60%; */
+        /* position: relative;
+        width: 40vw;
+        height: 30vw;
+        margin-top:-38vw;
+        margin-left: 50vw;
+    } */
+    /* #text-about{
+        margin-top:-40vw;
+    } */
+    #images-about{
+        margin-top:-34.5vw;
+        /* margin-left: 50vw; */
+    }
+}
+
+/* screen sizes 1400px and down */
+@media(max-width: 1400px){
+    .logo1 a img{
+        width: 300px;
+        height: 220px;
+        top:4vh;
+    }
+    #opis2{
+        width:80%;
+        margin-right: 10%; 
+        margin-left: 10%; 
+        margin-top:250px; 
+    } 
+    #pizza-menu .kategorije{  
+        width: 270px;
+        height:auto;
+        /* margin:1.8vw; */
+        text-align: center;
+    }
+    .footer{
+        background-image: url("../slike/drvena_pozadina.jpg") ;
+    }
+    #about{
+        background-position:95% 48%;
+        height: 85vh;
+    }
+    #text-about{
+        margin-top:-40vw;
+    }
+    #images-about{
+        margin-top:-34.5vw;
+        /* margin-left: 50vw; */
+    }
+
+}
+
+/* screen sizes 1300px and down */
+@media(max-width: 1300px){
+    #pizza-menu .kategorije{  
+        width:250px;
+    }
+    #pizza-menu .kategorije img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+/* screen sizes 1200px and down */
+@media(max-width: 1200px){
+    #pizza-menu .kategorije{  
+        width:300px;
+        margin:50px;
+        height: 400px;
+    }
+    #pizza-menu .kategorije img{
+        width: 250px;
+        height: 250px;
+    }
+    #meni{
+        height:1200px;
+    }
+}
+
+/* screen sizes 900px and down */
+@media(max-width: 900px){
+    #opis2{
+        margin-top:230px; 
+    }
+    #pizza-menu .kategorije{  
+        margin:10px;
+    }
+    #meni{
+        height:1000px;
+    }
+}
+/* screen sizes 639px and down */
+@media(max-width: 639px){
+    #meni{
+        height:1800px;
+    }
+}
+/* screen sizes 600px and down */
+@media(max-width: 600px){
+    #pocetna{
+        background-position: 100%;
+    }
+    #jezici{
+        margin-left:68%;
+        margin-top:5px;
+    }
+    .logo1 a img{
+        width: 300px;
+        height: 230px;
+        top:100px;
+    }
+    #opis2{
+        width:90%;
+        margin-right: 5%; 
+        margin-left: 5%; 
+        margin-top:50px;
+    }
+    #meni1{
+        top:50%;
+        width:200px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    #meni1 a{
+        display: block;
+        width:200px;
+        text-align: center;
+    }
+    #opis2 h1{
+        font-size: 2.5rem;
+    }
+    #footer2{
+        width:90%;
+        margin-right: 5%; 
+        margin-left: 5%; 
+        font-size: 1.05rem;
+        text-align: center;
+    }
+    #footer3{
+        width:90%;
+        margin-right: 5%; 
+        margin-left: 5%; 
+        font-size: 1rem;
+        text-align: center;
+        bottom: 1%;
+    }
+    #footer3 p{
+        display: inline-block;
+        margin-left:5px;
+        margin-right:5px;
+    }
+}
+
+/* screen sizes 400px and down */
+@media(max-width: 400px){
+    #pocetna{
+        background-position: 100%;
+    }
+    #opis2{
+        margin-top:15px; 
+    }
+    #jezici{
+        width:200px;
+        margin-left:60%;
+    }
+    #opis2 h1{
+        font-size: 2rem;
+        margin-top:50px;
+    }
+    .logo1 a img{
+        width: 200px;
+        height: 140px;
+        top:25vh;
+    }
+    #footer2{
+        font-size: 0.8rem;
+        bottom: 8%;
+    }
+    #footer3{
+        bottom: 5%;
+    }
+    #o_nama{
+        /* text-align: center; */
+    }
+    #about{
+        display: none;
+    }
+    #o_nama .logo a img{
+        width:30vw;
+        height: 20vw;
+        margin-top:-100px;
+
+    }
+    
+    #text-about{
+        /* flex: 0 1 40%; */
+        position: relative;
+        /* margin-left: 6vw; */
+        margin-top:0;
+        width: 300px;
+        display: block;
+        margin-top:10px;
+        /* text-align: center; */
+    }
+    #text-about h3{
+        font-size: 20vw;
+        /* margin-left:10vw; */
+        margin-top:30vw;
+        /* line-height: 20vw; */
+        /* height: 50px; */
+    }
+    #text-about p{
+        opacity: 1;
+        /* display: flex; */
+        font-size: 5vw;
+        line-height: 7vw;
+        font-family: 'Livvic', sans-serif;
+    }
+
+    #images-about{
+        /* flex: 0 1 60%; */
+        position: relative;
+        width: 40vw;
+        height: 30vw;
+        margin-top:-38vw;
+        margin-left: 50vw;
+    }
+}
+
+
+
+
+

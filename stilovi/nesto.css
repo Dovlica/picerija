@@ -1,0 +1,133 @@
+#pocetna{
+    display:flex;
+    height: 100%;
+    background-color: rgb(252, 234, 205);
+    box-shadow: 0px -8px 30px 5px rgba(129, 68, 32, 0.623);
+    /* box-shadow: 0px -20px 40px rgb(100, 90, 90), inset 0px -20px 40px rgb(100, 90, 90); */
+}
+
+#landing-text{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    padding-right: 1rem;
+    font-family: 'Livvic', sans-serif;
+    /* font-size: 1.8vw; */
+    font-size: 23px;
+    color:#773524;
+}
+#languages{
+    position: absolute;
+    top:0;
+    left:1vw;
+    font-size:1rem;
+    /* float: left; */
+}
+#languages a{
+    text-transform: lowercase;
+    color:rgb(133, 39, 42);
+}
+#languages a:hover{
+    font-weight: bold;
+}
+#landing-text h2{
+    text-transform: lowercase;
+    /* margin-top:50px; */
+    margin-top: 10vh;
+    opacity: 0.8;
+}
+#logosl img{
+    /* width: 25vw;
+    height:17vw; */
+    width: 250px;
+    height: 175px;
+    margin-top: 8vh;
+    /* margin-bottom:10vw; */
+}
+#landing-text .btn{
+    /* border:1px solid rgba(148, 50, 15, 0.514); */
+    padding: 0.7rem;
+    display: block;
+    width: 21vw;
+    /* align-items: center; */
+    /* margin: 0 auto; */
+    /* margin: 10vw auto 0; */
+    border-radius: 50px;
+    text-decoration: none;
+    color:#773524;
+    transition: background 500ms ease;  /*da mi se lagano menja hover efekat*/
+}
+#landing-text .btn:hover{
+    /* background-color:rgba(129, 68, 32, 0.418); */
+    opacity: 0.9;
+    background-image: url("../slike/drvena_pozadina.jpg");
+    color:rgb(252, 234, 205);
+}
+#landing-text .btn i{
+    font-size: 1.3vw;
+}
+#landing-text a.btn{
+    margin: 0 auto;
+}
+#landing-text-bottom{
+    position: absolute;
+    /* margin: 20vw auto; */
+    margin-top: 90vh;
+    /* margin-bottom: 100px; */
+    color: rgb(97, 40, 22);
+}
+#landing-image{
+    /* background-image: url("../slike/pica-naslovna.jpg"); */
+    /* background-image: url("../LJM03035 - Copy.JPG"); */
+    /* background-image: url("../slike/LJM03074-01.jpeg"); */
+    
+    background-position: center;
+    /* background-position: 20%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex: 0 1 60vw;
+    /* margin: 0; */
+    /* box-shadow: 0px 0px 30px 5px rgba(130,36,14,0.67); */
+} 
+
+
+#pizza-menu .kategorije{  
+    width: 270px;
+    /* width: 25%; */
+    /* flex-basis: 25%; */
+    /* height:400px; */
+    height:auto;
+    margin:1.8vw;
+    text-align: center;
+    border-radius:3%;
+    transition: box-shadow 0.3s ease-in-out;
+    /*probaj i bez ovog dole*/
+    background: linear-gradient(to bottom,  rgba(129, 68, 32, 0.37) 0%, rgba(245, 227, 213, 0.589) 50%);
+    box-shadow:0 0 20px rgb(185, 155, 141);
+}
+
+#about{
+    background-image: url("../slike/pec_na_drva.jpg");
+    background-position:95% 48%;
+    /* background-position:95vw 40vw; */
+    opacity: 0.4;
+    /* height: 85vh; */
+    height: 40vw;
+    /* box-shadow: 0px -20px 40px rgb(100, 90, 90), inset 0px -20px 40px rgb(100, 90, 90); */
+    /* box-shadow: 0px -20px 30px 5px rgba(129, 68, 32, 0.623); */
+    /* display: flex; */
+}
+
+#meni .footer{
+    margin-top:2.1vw;
+}
+#o_nama{
+    height: 85vh;
+}
+#o_nama .logo a img{
+    opacity: 0.9;
+}
